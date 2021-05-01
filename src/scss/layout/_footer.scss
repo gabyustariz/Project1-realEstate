@@ -1,0 +1,17 @@
+/** Footer **/
+
+.footer-principal {
+    background-color: rgb(34, 34, 34);
+    margin-top: 5rem;
+    padding: 3rem 0;
+}
+
+.contenido-footer {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    @include tablet{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

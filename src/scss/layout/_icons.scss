@@ -1,0 +1,30 @@
+/** Iconos-Nosotros **/
+
+.iconos-nosotros {
+    text-align: center;
+    @include tablet{
+        @include grid(2, 2rem);
+    }
+    @media (min-width: 1024px){
+        @include grid(3,2rem);
+    }
+}
+
+.icono{
+    margin-bottom: 2rem;
+    h3 {
+    text-transform: uppercase;
+    }
+    @include tablet{
+        &:last-of-type{
+            grid-column: 1 / 3;
+        }
+    }
+    @media (min-width: 1024px){
+        margin-bottom: 0;
+        &:last-of-type{
+            grid-column:auto;
+        }
+    }
+
+}

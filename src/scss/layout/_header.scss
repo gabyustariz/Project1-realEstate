@@ -1,0 +1,46 @@
+/** Header **/
+
+.no-webp .inicio{
+    background: #09003bbb url(../img/header.jpg);
+}
+
+.webp .inicio {
+    background: #09003bbb url(../img/header.webp);
+}
+
+.site-header {
+    background-color: rgb(34, 34, 34);
+    padding: 3rem 0;
+    &.inicio {
+        height: 60rem;
+        box-sizing: content-box;
+        @include desktop{
+            box-sizing: border-box;
+            height: 90vh;
+        }
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h1 {
+        text-align: center;
+        @include tablet{
+            text-align: left;
+        }
+        margin-top: 4rem;
+        color: rgba(255, 255, 255, 1);
+        max-width: 70rem;
+        margin: 0;
+        font-weight: normal;
+        @include tablet{
+            font-weight: bold;
+        }
+    }
+    
+}

@@ -1,0 +1,90 @@
+/** Seccion Inferior **/
+
+.seccion-inferior {
+    @include desktop{
+        display: flex;
+        justify-content: space-between;
+        .blog {
+            flex-basis: 60%;
+        }
+        .testimoniales {
+            flex-basis: calc(40% - 4rem);
+        }
+    }
+}
+
+.entrada-blog {
+    @include tablet{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .imagen {
+            flex-basis: 40%;
+        }
+        .texto-entrada {
+            flex-basis: calc(60% - 3rem);
+        }
+    }
+}
+
+.texto-entrada a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 3rem;
+}
+
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 3rem;
+}
+
+.texto-entrada h4::after {
+    content: '';
+    background: rgb(113, 177, 0);
+    display: block;
+    margin-top: 1rem;
+    height: 0.5rem;
+}
+
+.texto-entrada span {
+    color: rgba(240, 137, 2, 0.904);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.testimonial {
+    background-color: darken(rgba(113, 179, 0, 0.8), 5%);
+    padding: 2rem;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.8rem;
+    border-radius: 3rem;
+}
+
+.testimonial p {
+    text-align: right;
+    margin-inline-end: 1rem;
+}
+
+.testimonial blockquote::before {
+    content: '';
+    background-image: url(../img/comilla.svg);
+    background-image: no-repeat;
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    left: -4rem;
+    top: -1rem;
+}
+
+.testimonial blockquote {
+    /* Repasar posicionamiento */
+    position: relative;
+    padding-left: 3rem;
+}

@@ -1,0 +1,47 @@
+/** Pagina Contactos **/
+
+legend {
+    font-size: 2.8rem;
+    color: rgb(51, 51, 51);
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+form p {
+    margin: 2rem 0 0 0;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    display: block;
+    width: 100%;
+    background: rgba(204, 204, 204, 0.7);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+textarea {
+    height: 20rem;
+}
+
+select {
+    appearance: none;
+}
+
+.forma-contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+}
