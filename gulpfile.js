@@ -66,3 +66,4 @@ function watchArchivos() {
 exports.minimg = imagenes;
 exports.css = css;
 exports.default = series(css, javascript, imagenes, versionWebp, watchArchivos);
+exports.build = series(css, javascript, imagenes, versionWebp);
