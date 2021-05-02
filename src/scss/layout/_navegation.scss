@@ -92,10 +92,12 @@
         padding-top: 20%;
         height: 60rem;
         min-height: 100% !important;
+        animation: mymove 2s;
         // overflow-y: scroll;
         a{
             font-size: 2rem;
             display:block;
+            animation: mymove2 2s;
             &::after{
                 content: '';
                 display: block;
@@ -120,3 +122,13 @@
         position: fixed;
     }
 }
+
+@keyframes mymove {
+    from {width: 0px;}
+    to {width: 95%;}
+  }
+
+  @keyframes mymove2 {
+    from {transform: translate(-10rem);}
+    to {transform: translate(0);}
+  }

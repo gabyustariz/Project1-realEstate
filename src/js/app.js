@@ -29,6 +29,9 @@ function navBar() {
         }
         const stickyNav = e.target.parentElement.parentElement.parentElement;
         stickyNav.classList.add('sticky-menu');
+
+        // Toogle quita la clase de tenerla y la pone si no la tiene
+        // document.querySelector('.barra').classList.toogle('sticky-menu');
     }
 }
 
