@@ -1,6 +1,23 @@
 document.addEventListener('DOMContentLoaded', my_app);
 
 function my_app(){
+
+    navBar();
+
+    reportWindowSize();
+
+    insertDate();
+
+}
+
+function insertDate(){
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const date = document.querySelector('#date');
+    date.textContent = year;
+}
+
+function navBar() {
     const menu = document.querySelector('.mobile-menu');
     window.onresize = reportWindowSize;
     menu.onclick = function openNav(e){
