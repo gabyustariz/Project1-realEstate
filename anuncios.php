@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Anuncios</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://images.vexels.com/media/users/3/128063/isolated/preview/c7e1a77f590593736735ff7a6368a769-verifique-el---cono-de-bienes-ra--ces-by-vexels.png">
-    <link rel="stylesheet" href="../../build/css/styles.css";
-</head>
-<body>
-    <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <div class="display-mobile-menu">
-                    <div class="mobile-menu">
-                        <img src="build/img/barras.svg" alt="menu-navegation"/>
-                    </div>
-                    <a href="index.html">
-                        <img src="../../build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                    </a>
-                </div>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    require 'includes/functions.php';
+    includeTemplate('header');
+?>
+
     <main class="contenedor seccion">
         <h1 class="fw-300 centrar-texto">Casas y Depas en Venta</h1>
         <div class="contenedor-anuncios">
@@ -37,7 +10,7 @@
                 <picture>
                     <source srcset="build/img/anuncio1.webp" type="image/webp">
                     <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio1.jpg" alt="Anuncio casa en el lago">
+                    <img loading="lazy" src="build/img/anuncio1.jpg" alt="Anuncio casa en el lago">
                 </picture>
 
                 <div class="contenido-anuncio">
@@ -46,19 +19,19 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>2</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>4</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -66,7 +39,7 @@
                 <picture>
                     <source srcset="build/img/anuncio2.webp" type="image/webp">
                     <source srcset="build/img/anuncio2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio2.jpg" alt="Anuncio casa de lujo">
+                    <img loading="lazy" src="build/img/anuncio2.jpg" alt="Anuncio casa de lujo">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa terminados de lujo</h3>
@@ -74,19 +47,19 @@
                     <p class="precio">$2,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>2</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>1</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>3</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -94,7 +67,7 @@
                 <picture>
                     <source srcset="build/img/anuncio3.webp" type="image/webp">
                     <source srcset="build/img/anuncio3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio3.jpg" alt="Anuncio casa de alberca">
+                    <img loading="lazy" src="build/img/anuncio3.jpg" alt="Anuncio casa de alberca">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa con alberca</h3>
@@ -102,19 +75,19 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>5</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>6</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -122,7 +95,7 @@
                 <picture>
                     <source srcset="build/img/anuncio4.webp" type="image/webp">
                     <source srcset="build/img/anuncio4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio4.jpg" alt="Anuncio casa de lago">
+                    <img loading="lazy" src="build/img/anuncio4.jpg" alt="Anuncio casa de lago">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa fuera de la Ciudad</h3>
@@ -130,19 +103,19 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>4</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>5</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -150,7 +123,7 @@
                 <picture>
                     <source srcset="build/img/anuncio5.webp" type="image/webp">
                     <source srcset="build/img/anuncio5.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio5.jpg" alt="Anuncio casa de lago">
+                    <img loading="lazy" src="build/img/anuncio5.jpg" alt="Anuncio casa de lago">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa frente al bosque</h3>
@@ -158,19 +131,19 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>4</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>5</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
@@ -178,7 +151,7 @@
                 <picture>
                     <source srcset="build/img/anuncio6.webp" type="image/webp">
                     <source srcset="build/img/anuncio6.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/anuncio6.jpg" alt="Anuncio casa de lago">
+                    <img loading="lazy" src="build/img/anuncio6.jpg" alt="Anuncio casa de lago">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa frente al bosque</h3>
@@ -186,38 +159,23 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="../../build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="build/img/icono_wc.svg" alt="icono-wc">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>4</p>
                         </li>
                         <li>
-                            <img src="../../build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>5</p>
                         </li>
                     </ul>
-                    <a href="anuncio.html" class="boton boton1 d-block">Ver Propiedad</a>
+                    <a href="anuncio.php" class="boton boton1 d-block">Ver Propiedad</a>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <footer class= "footer-principal">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p>Todos los derechos reservados <span id="date"></span> &copy; </p>
-        </div>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-</html>
+<?php includeTemplate('footer'); ?>

@@ -30,4 +30,34 @@
     .testimonial{
         background-color: darken($green, 10);
     }
+
+    .texto-nosotros blockquote{
+        color: $white;
+    }
+
+   form{
+        label, legend, p{
+            color: lightgray;
+        }
+        input:not([type="submit"]),
+        textarea,
+        select {
+            background-color: $darkgray;
+            border: 1px solid $darkgray;
+            color: $white;
+        }
+
+        input::placeholder{
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+
+    .sticky-menu{
+        .navegacion{
+            background-color: darken($green, 15);
+            box-shadow: 0.2rem 0.3rem 0.4rem darken($green, 15);
+        }
+    }
+
 }

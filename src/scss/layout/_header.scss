@@ -11,6 +11,7 @@
 .site-header {
     background-color: $darkgray;
     padding: 3rem 0;
+    height: auto;
     &.inicio {
         height: 60rem;
         box-sizing: content-box;

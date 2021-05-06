@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nuestro Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://images.vexels.com/media/users/3/128063/isolated/preview/c7e1a77f590593736735ff7a6368a769-verifique-el---cono-de-bienes-ra--ces-by-vexels.png">
-    <link rel="stylesheet" href="../../build/css/styles.css";
-</head>
-<body>
-    <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <div class="display-mobile-menu">
-                    <div class="mobile-menu">
-                        <img src="build/img/barras.svg" alt="menu-navegation"/>
-                    </div>
-                    <a href="index.html">
-                        <img src="../../build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                    </a>
-                </div>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    require 'includes/functions.php';
+    includeTemplate('header');
+?>
 
     <main class="seccion contenido-centrado conte">
         <h3 class="fw-300 centrar-texto">Nuestro blog</h3>
@@ -39,11 +11,11 @@
                 <picture>
                     <source srcset="build/img/blog1.webp" type="image/webp">
                     <source srcset="build/img/blog1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/blog1.jpg" alt="Entrada de blog">
+                    <img loading="lazy" src="build/img/blog1.jpg" alt="Entrada de blog">
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Terraza en el techo de tu casa</h4>
                 </a>
                 <p>Escrito el <span>20/10/2019</span> por: <span>Admin</span> </p>
@@ -57,11 +29,11 @@
                 <picture>
                     <source srcset="build/img/blog2.webp" type="image/webp">
                     <source srcset="build/img/blog2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="/build/img/blog2.jpg" alt="Entrada de blog">
+                    <img loading="lazy" src="build/img/blog2.jpg" alt="Entrada de blog">
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html">
+                <a href="entrada.php">
                     <h4>Guía para la decoración de tu hogar</h4>
                 </a>
                 <p>Escrito el <span>20/10/2019</span> por: <span>Admin</span> </p>
@@ -75,11 +47,11 @@
             <picture>
                 <source srcset="build/img/blog3.webp" type="image/webp">
                 <source srcset="build/img/blog3.jpg" type="image/jpeg">
-                <img loading="lazy" src="/build/img/blog3.jpg" alt="Entrada de blog">
+                <img loading="lazy" src="build/img/blog3.jpg" alt="Entrada de blog">
             </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html"><h4>Guía para la decoración de tu hogar</h4></a>
+                <a href="entrada.php"><h4>Guía para la decoración de tu hogar</h4></a>
                 <p>Escrito el <span>20/10/2019</span>  por: <span>Admin</span> </p>
                 <p>Consejos para construir una terraza en el techo de tu casa con los mejroes 
                 materiales y ahorrando dinero</p>
@@ -92,11 +64,11 @@
             <picture>
                 <source srcset="build/img/blog4.webp" type="image/webp">
                 <source srcset="build/img/blog4.jpg" type="image/jpeg">
-                <img loading="lazy" src="/build/img/blog4.jpg" alt="Entrada de blog">
+                <img loading="lazy" src="build/img/blog4.jpg" alt="Entrada de blog">
             </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.html"><h4>Guía para la decoración de tu hogar</h4></a>
+                <a href="entrada.php"><h4>Guía para la decoración de tu hogar</h4></a>
                 <p>Escrito el <span>20/10/2019</span>  por: <span>Admin</span> </p>
                 <p>Consejos para construir una terraza en el techo de tu casa con los mejroes 
                 materiales y ahorrando dinero</p>
@@ -104,19 +76,4 @@
         </article>
     </main>
 
-    <footer class= "footer-principal">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p>Todos los derechos reservados <span id="date"></span> &copy; </p>
-        </div>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-</html>
+<?php includeTemplate('footer'); ?>

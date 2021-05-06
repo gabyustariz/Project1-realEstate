@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nosotros</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://images.vexels.com/media/users/3/128063/isolated/preview/c7e1a77f590593736735ff7a6368a769-verifique-el---cono-de-bienes-ra--ces-by-vexels.png">
-    <link rel="stylesheet" href="../../build/css/styles.css">
-</head>
-<body>
-    <header class="site-header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <div class="display-mobile-menu">
-                    <div class="mobile-menu">
-                        <img src="build/img/barras.svg" alt="menu-navegation"/>
-                    </div>
-                    <a href="index.html">
-                        <img src="../../build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                    </a>
-                </div>
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<?php
+    require 'includes/functions.php';
+    includeTemplate('header');
+?>
 
     <main class="contenedor">
         <h1 class="fw-300 centrar-texto">Conoce sobre nosotros</h1>
@@ -37,7 +9,7 @@
             <picture>
                 <source srcset="build/img/nosotros.webp" type="image/webp">
                 <source srcset="build/img/nosotros.jpg" type="image/jpeg">
-                <img loading="lazy" src="/build/img/nosotros.jpg" alt="Imagen de nosotros">
+                <img loading="lazy" src="build/img/nosotros.jpg" alt="Imagen de nosotros">
             </picture>
             <div class="texto-nosotros">
                 <blockquote>25 Años de Experiencia</blockquote>
@@ -60,7 +32,7 @@
         <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
         <div class="iconos-nosotros">
             <div class="icono">
-                <img src="../../build/img/icono1.svg" alt="Icono Seguridad">
+                <img src="build/img/icono1.svg" alt="Icono Seguridad">
                 <h3>Seguridad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt 
                 molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque 
@@ -68,7 +40,7 @@
             </div>
 
             <div class="icono">
-                <img src="../../build/img/icono2.svg" alt="Icono Mejor Precio">
+                <img src="build/img/icono2.svg" alt="Icono Mejor Precio">
                 <h3>El mejor precio</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt 
                 molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque 
@@ -76,7 +48,7 @@
             </div>
 
             <div class="icono">
-                <img src="../../build/img/icono3.svg" alt="Icono A tiempo">
+                <img src="build/img/icono3.svg" alt="Icono A tiempo">
                 <h3>A tiempo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt 
                 molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque 
@@ -85,19 +57,4 @@
         </div>
     </section>
 
-    <footer class= "footer-principal">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p>Todos los derechos reservados <span id="date"></span> &copy; </p>
-        </div>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-</html>
+<?php includeTemplate('footer'); ?>

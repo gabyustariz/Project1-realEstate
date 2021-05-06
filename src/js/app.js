@@ -6,7 +6,7 @@ function my_app(){
 
     reportWindowSize();
 
-    insertDate();
+    // insertDate();
 
     darkMode();
 
@@ -20,6 +20,21 @@ function insertDate(){
 }
 
 function darkMode(){
+    // Para habilitar el estilo de preferencia del SO
+    // const prefers = window.matchMedia(('prefers-color-scheme: dark'));
+    // if(prefers.matches) { 
+    //     document.body.classList.add('dark-mode');
+    // }else{
+    //     document.body.classList.remove('dark-mode');
+    // }
+
+    // prefers.addEventListener('change', function(){
+    //     if(prefers.matches) { 
+    //         document.body.classList.add('dark-mode');
+    //     }else{
+    //         document.body.classList.remove('dark-mode');
+    //     }
+    // });
     const dark = document.querySelector('.dark-mode-boton');
     dark.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
