@@ -2,27 +2,31 @@
 
 .barra {
     text-align: center;
-
-    @include tablet{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-
-.display-mobile-menu{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    &>a{
+    .display-mobile-menu{
         flex: 1;
-        text-align: center;
-        padding-left: 4.5rem;
         @include tablet{
-            padding-left: 0;
+            flex: 0 0 auto;
         }
+        display: flex;
+        align-items: center;
+        &>a{
+            flex: 1;
+            text-align: center;
+            padding-left: 4.5rem;
+            img{
+                margin: 0 auto;
+                display: grid;
+                place-items: center;
+            }
+            @include tablet{
+                padding-left: 0;
+            }
+        }
+    
     }
-
 }
 
 
@@ -66,19 +70,17 @@
     }
 
     img{
-        opacity: 0.9;
-        transition: 0.2s;
+        display: grid;
+        place-items: center;
         &:hover{
             cursor: pointer;
-            // filter: invert(57%) sepia(100%) saturate(948%) hue-rotate(40deg) brightness(89%) contrast(101%);
-            opacity: 1;
         }
-        
     }
 }
 
 .sticky-menu{
     .navegacion{
+        position: fixed;
         z-index: 1;
         display: block;
         top: 0;
@@ -87,30 +89,28 @@
         background-color: rgba(123, 185, 15, 0.90);
         font-weight: bold;
         width: 95%;
-        position: fixed;
-        box-shadow: 0.2rem 0.3rem 0.4rem #444;
+        box-shadow: 0.2rem 0.3rem 0.4rem $mediumgray;
         padding-top: 20%;
-        height: 60rem;
-        min-height: 100% !important;
-        animation: mymove 2s;
+        animation: mymove 1s linear;
+        overflow-x: hidden;
         // overflow-y: scroll;
         a{
             font-size: 2rem;
-            display:block;
-            animation: mymove2 2s;
+            display: block;
+            animation: mymove2 1s linear;
             &::after{
                 content: '';
                 display: block;
                 width: 80%;
                 margin: 1rem auto;
                 height: 0.1rem;
-                background-color: #e1e1e1;
+                background-color: $lightgray;
                 margin-bottom: 0;
             }
             padding-top: 1rem;
             &:hover, &:focus {
                 background-color: rgba(255, 255, 255, 0.2);
-                color: rgba(255, 255, 255, 1);
+                color: $white;
             }
         }
 
@@ -118,10 +118,32 @@
     }
 
     .mobile-menu{
+        // animation: mymove2 5s;
         z-index: 2;
         position: fixed;
     }
 }
+
+.container-right{
+    display: flex;
+    align-items: center;
+
+    .dark-mode-boton{
+        display: grid;
+        place-items: center;
+        width: 3rem;
+        filter: invert(100%);
+        @include tablet{
+            margin-left: 2rem;
+        }
+        
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+
 
 @keyframes mymove {
     from {width: 0px;}

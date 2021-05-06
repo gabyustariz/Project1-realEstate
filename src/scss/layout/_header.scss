@@ -1,15 +1,15 @@
 /** Header **/
 
 .no-webp .inicio{
-    background: #09003bbb url(../img/header.jpg);
+    background: $darkgray url(../img/header.jpg);
 }
 
 .webp .inicio {
-    background: #09003bbb url(../img/header.webp);
+    background: $darkgray url(../img/header.webp);
 }
 
 .site-header {
-    background-color: rgb(34, 34, 34);
+    background-color: $darkgray;
     padding: 3rem 0;
     &.inicio {
         height: 60rem;
@@ -34,7 +34,7 @@
             text-align: left;
         }
         margin-top: 4rem;
-        color: rgba(255, 255, 255, 1);
+        color: $white;
         max-width: 70rem;
         margin: 0;
         font-weight: normal;

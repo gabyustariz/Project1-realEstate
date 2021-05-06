@@ -31,7 +31,7 @@
 }
 
 .texto-entrada a {
-    color: rgba(0, 0, 0, 1);
+    color: $black;
 }
 
 .texto-entrada h4 {
@@ -46,22 +46,22 @@
 
 .texto-entrada h4::after {
     content: '';
-    background: rgb(113, 177, 0);
+    background: $green;
     display: block;
     margin-top: 1rem;
     height: 0.5rem;
 }
 
 .texto-entrada span {
-    color: rgba(240, 137, 2, 0.904);
+    color: $orange;
     font-weight: 700;
     font-style: italic;
 }
 
 .testimonial {
-    background-color: darken(rgba(113, 179, 0, 0.8), 5%);
+    background-color: darken($green, 5%);
     padding: 2rem;
-    color: rgba(255, 255, 255, 1);
+    color: $white;
     font-size: 1.8rem;
     border-radius: 3rem;
 }

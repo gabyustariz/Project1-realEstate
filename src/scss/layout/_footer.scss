@@ -1,13 +1,13 @@
 /** Footer **/
 
 .footer-principal {
-    background-color: rgb(34, 34, 34);
+    background-color: $darkgray;
     margin-top: 5rem;
     padding: 3rem 0;
 }
 
 .contenido-footer {
-    color: rgba(255, 255, 255, 1);
+    color: $white;
     text-align: center;
     @include tablet{
         display: flex;

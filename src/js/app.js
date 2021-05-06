@@ -8,6 +8,8 @@ function my_app(){
 
     insertDate();
 
+    darkMode();
+
 }
 
 function insertDate(){
@@ -15,6 +17,13 @@ function insertDate(){
     const year = currentDate.getFullYear();
     const date = document.querySelector('#date');
     date.textContent = year;
+}
+
+function darkMode(){
+    const dark = document.querySelector('.dark-mode-boton');
+    dark.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
 }
 
 function navBar() {
@@ -31,7 +40,7 @@ function navBar() {
         stickyNav.classList.add('sticky-menu');
 
         // Toogle quita la clase de tenerla y la pone si no la tiene
-        // document.querySelector('.barra').classList.toogle('sticky-menu');
+        // document.querySelector('.barra').classList.toggle('sticky-menu');
     }
 }
 

@@ -1,10 +1,10 @@
     /** Contacto Home **/
     .webp .imagen-contacto{
-        background: url(../img/encuentra.webp);
+        background-image: url(../img/encuentra.webp);
     }
 
     .no-webp .imagen-contacto{
-        background: url(../img/encuentra.jpg);
+        background-image: url(../img/encuentra.jpg);
     }
 
 
@@ -24,7 +24,7 @@
     }
     
     .contenido-contacto {
-        color: rgba(255, 255, 255, 1);
+        color: $white;
         text-align: center;
         max-width: 90%;
         @include tablet{

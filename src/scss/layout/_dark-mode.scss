@@ -1,0 +1,33 @@
+.dark-mode{
+    background-color: darken($darkgray, 10);
+
+    p{
+        color: $white;
+    }
+
+    a, h1, h2, h3, h4{
+        color: $lightgray;
+    }
+
+    .iconos-nosotros{
+        background-color: transparent;
+    }
+
+    .anuncio{
+        background-color: $darkgray;
+        border: 1px solid $darkgray;
+        .precio{
+            color: $green;
+        }
+    }
+
+    .iconos-caracteristicas{
+        img{
+            filter: invert(100%);
+        }
+    }
+
+    .testimonial{
+        background-color: darken($green, 10);
+    }
+}
