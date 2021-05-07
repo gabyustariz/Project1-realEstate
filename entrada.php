@@ -8,9 +8,9 @@
     <main class="seccion contenido-centrado texto-entrada contenedor">
 
         <picture>
-            <source srcset="build/img/destacada2.webp" type="image/webp">
-            <source srcset="build/img/destacada2.jpg" type="image/jpeg">
-            <img loading="lazy" src="build/img/destacada2.jpg" alt="imagen-entrada">
+            <source srcset="/build/img/destacada2.webp" type="image/webp">
+            <source srcset="/build/img/destacada2.jpg" type="image/jpeg">
+            <img loading="lazy" src="/build/img/destacada2.jpg" alt="imagen-entrada">
         </picture>
         <p>Escrito el <span>20/10/2019</span>  por: <span>Admin</span> </p>
         <div class="texto-centrado">

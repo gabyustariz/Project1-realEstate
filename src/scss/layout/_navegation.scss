@@ -15,7 +15,7 @@
         &>a{
             flex: 1;
             text-align: center;
-            padding-left: 4.5rem;
+            margin-left: 4.5rem;
             img{
                 margin: 0 auto;
                 display: grid;
@@ -38,6 +38,7 @@
         background-color: transparent;
     }
     a {
+        color: $white;
         text-decoration: none;
         @include tablet{
             font-size: 1.8rem;
@@ -46,12 +47,11 @@
                 margin-right: 0;
             }
         }
-
         transition: 0.4s;
-        color: rgba(255, 255, 255, 0.6);
         @include tablet{
+            color: rgba(255, 255, 255, 0.6);
             &:hover, &:focus {
-                color: rgba(255, 255, 255, 1);
+                color: white;
             }
         }
 
@@ -92,12 +92,13 @@
         max-width: 50rem;
         box-shadow: 0.2rem 0.3rem 0.4rem $mediumgray;
         padding-top: 20%;
-        animation: mymove 1s linear;
+        animation: mymove 0.5s linear;
         overflow-x: hidden;
         // overflow-y: scroll;
         a{
             font-size: 2rem;
             display: block;
+            color: $white;
             // transition: width 1s linear;
             
             &::after{
@@ -112,7 +113,6 @@
             padding-top: 1rem;
             &:hover, &:focus {
                 background-color: rgba(255, 255, 255, 0.2);
-                color: $white;
             }
         }
 

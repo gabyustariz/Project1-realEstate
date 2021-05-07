@@ -1,0 +1,11 @@
+.alert {
+    &.error {
+        background-color: rgba(236, 131, 131, 0.8);
+        border: 1px solid rgb(255, 30, 30);
+        border-radius: 0.5rem;
+        padding: 0.5rem 2rem;
+        text-align: center;
+        color: rgb(255, 30, 30);
+        font-weight: bold;
+    }
+}

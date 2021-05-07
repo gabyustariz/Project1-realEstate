@@ -1,3 +1,5 @@
+<?php "Epaleeee"; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,7 +10,7 @@
     <title>Bienes Raices</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://images.vexels.com/media/users/3/128063/isolated/preview/c7e1a77f590593736735ff7a6368a769-verifique-el---cono-de-bienes-ra--ces-by-vexels.png">
-    <link rel="stylesheet" href="build/css/styles.css";>
+    <link rel="stylesheet" href="/build/css/styles.css">
 </head>
 
 <body>
@@ -18,10 +20,10 @@
             <div class="barra">
                 <div class="display-mobile-menu">
                     <div class="mobile-menu">
-                        <img src="build/img/barras.svg" alt="menu-navegation"/>
+                        <img src="/build/img/barras.svg" alt="menu-navegation"/>
                     </div>
                     <a href="index.php">
-                        <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
+                        <img src="/build/img/logo.svg" alt="Logotipo de Bienes Raices">
                     </a>
                 </div>
                 <div class="container-right">
@@ -32,7 +34,7 @@
                         <a href="contacto.php">Contacto</a>
                     </nav>
                     <div class="dark-mode-boton">
-                        <img src="build/img/dark-mode.svg" alt="icono moon" />
+                        <img src="/build/img/dark-mode.svg" alt="icono moon" />
                     </div>
                 </div>
             </div>

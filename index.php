@@ -6,19 +6,19 @@
         <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
         <div class="iconos-nosotros">
             <div class="icono">
-                <img src="build/img/icono1.svg" alt="Icono Seguridad">
+                <img src="/build/img/icono1.svg" alt="Icono Seguridad">
                 <h3>Seguridad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque voluptate ipsa asperiores ducimus, quas nostrum minus itaque nesciunt delectus.</p>
             </div>
 
             <div class="icono">
-                <img src="build/img/icono2.svg" alt="Icono Mejor Precio">
+                <img src="/build/img/icono2.svg" alt="Icono Mejor Precio">
                 <h3>El mejor precio</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque voluptate ipsa asperiores ducimus, quas nostrum minus itaque nesciunt delectus.</p>
             </div>
 
             <div class="icono">
-                <img src="build/img/icono3.svg" alt="Icono A tiempo">
+                <img src="/build/img/icono3.svg" alt="Icono A tiempo">
                 <h3>A tiempo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt molestiae eligendi explicabo excepturi quaerat sint alias, vel eius cumque voluptate ipsa asperiores ducimus, quas nostrum minus itaque nesciunt delectus.</p>
             </div>
@@ -30,9 +30,9 @@
         <div class="contenedor-anuncios">
             <div class="anuncio">
                 <picture>
-                    <source srcset="build/img/anuncio1.webp" type="image/webp">
-                    <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio1.jpg" alt="Anuncio casa en el lago">
+                    <source srcset="/build/img/anuncio1.webp" type="image/webp">
+                    <source srcset="/build/img/anuncio1.jpg" type="image/jpeg">
+                    <img loading="lazy" src="/build/img/anuncio1.jpg" alt="Anuncio casa en el lago">
                 </picture>
 
                 <div class="contenido-anuncio">
@@ -41,15 +41,15 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="/build/img/icono_wc.svg" alt="icono-wc">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="/build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>2</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="/build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>4</p>
                         </li>
                     </ul>
@@ -59,9 +59,9 @@
 
             <div class="anuncio">
                 <picture>
-                    <source srcset="build/img/anuncio2.webp" type="image/webp">
-                    <source srcset="build/img/anuncio2.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio2.jpg" alt="Anuncio casa de lujo">
+                    <source srcset="/build/img/anuncio2.webp" type="image/webp">
+                    <source srcset="/build/img/anuncio2.jpg" type="image/jpeg">
+                    <img loading="lazy" src="/build/img/anuncio2.jpg" alt="Anuncio casa de lujo">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa terminados de lujo</h3>
@@ -69,15 +69,15 @@
                     <p class="precio">$2,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="/build/img/icono_wc.svg" alt="icono-wc">
                             <p>2</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="/build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>1</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="/build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>3</p>
                         </li>
                     </ul>
@@ -87,9 +87,9 @@
 
             <div class="anuncio">
                 <picture>
-                    <source srcset="build/img/anuncio3.webp" type="image/webp">
-                    <source srcset="build/img/anuncio3.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/anuncio3.jpg" alt="Anuncio casa de alberca">
+                    <source srcset="/build/img/anuncio3.webp" type="image/webp">
+                    <source srcset="/build/img/anuncio3.jpg" type="image/jpeg">
+                    <img loading="lazy" src="/build/img/anuncio3.jpg" alt="Anuncio casa de alberca">
                 </picture>
                 <div class="contenido-anuncio">
                     <h3>Casa con alberca</h3>
@@ -97,15 +97,15 @@
                     <p class="precio">$3,000,000</p>
                     <ul class="iconos-caracteristicas">
                         <li>
-                            <img src="build/img/icono_wc.svg" alt="icono-wc">
+                            <img src="/build/img/icono_wc.svg" alt="icono-wc">
                             <p>5</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
+                            <img src="/build/img/icono_estacionamiento.svg" alt="icono-estacionamiento">
                             <p>3</p>
                         </li>
                         <li>
-                            <img src="build/img/icono_dormitorio.svg" alt="icono-dormitorio">
+                            <img src="/build/img/icono_dormitorio.svg" alt="icono-dormitorio">
                             <p>6</p>
                         </li>
                     </ul>
@@ -135,9 +135,9 @@
                 <div class="imagen">
                     <!-- No entiendo por que debo poner un div aqui -->
                     <picture>
-                        <source srcset="build/img/blog1.webp" type="image/webp">
-                        <source srcset="build/img/blog1.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/blog1.jpg" alt="Entrada de blog">
+                        <source srcset="/build/img/blog1.webp" type="image/webp">
+                        <source srcset="/build/img/blog1.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/build/img/blog1.jpg" alt="Entrada de blog">
                     </picture>
                 </div>
                 <div class="texto-entrada">
@@ -153,9 +153,9 @@
                 <div class="imagen">
                     <!-- No entiendo por que debo poner un div aqui -->
                     <picture>
-                        <source srcset="build/img/blog2.webp" type="image/webp">
-                        <source srcset="build/img/blog2.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/blog2.jpg" alt="Entrada de blog">
+                        <source srcset="/build/img/blog2.webp" type="image/webp">
+                        <source srcset="/build/img/blog2.jpg" type="image/jpeg">
+                        <img loading="lazy" src="/build/img/blog2.jpg" alt="Entrada de blog">
                     </picture>
                 </div>
                 <div class="texto-entrada">
